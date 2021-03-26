@@ -1,0 +1,44 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>register</title>
+          <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+          <link rel="stylesheet" href="stylesheets/patientsignup.css">
+      </head>
+      <body>
+        
+         <div class="main">
+            <div class="col-md-6 col-sm-12">
+               <div class="login-form">
+                  <form action ="/auth/patientsignup" method="POST">
+                     <div class="form-group">
+                        <label>Email </label>
+                        <input type="email" class="form-control" placeholder="Email id" name = "email">
+                     </div>
+                     <div class="form-group">
+                        <label>Phone no.</label>
+                        <input type="text" class="form-control" placeholder="Phone no." name = "phone">
+                     </div>
+                     <button class="btn btn-black">Sign UP</button>
+                     <button type="submit" class="btn btn-secondary">or Login</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="sidenav">
+            <div class="login-main-text">
+               <h2>New here?<br> create an account </h2>
+               <p>Login or register from here to access.</p>
+               <img src="assets/signup-doodle.png" alt="">
+            </div>
+         </div>
+
+        
+         
+         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      </body>
+      </html>

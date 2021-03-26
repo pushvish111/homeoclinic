@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeoClinic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="/"><img src="assets/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="nav-content">
+            <ul>
+               <li><a href="#"> About</a></li>
+               <li><a href="#">Contact us</a></li>   
+               <li><a href="/patientlogin" onClick="openForm()">Patient Login </a></li> 
+            </ul>
+        </div>
+    </nav>
+    <!-- LOgin popup
+    <div class="popup-container">
+        <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+            <form action="#" class="formContainer">
+                <h2>Login here!</h2>
+                <hr>
+                <label for="email">
+                <strong>E-mail</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Email" name="email" required>
+                <label for="psw">
+                <strong>Password</strong>
+                </label>
+                <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+                <button type="submit" class="btn"><strong> Log in</strong></button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+            </div>
+        </div>
+    </div> -->
+    <div class="slideshow">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <img src="assets/1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="assets/crousal.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="assets/1.jpg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>  
+
+
+
+
+    <div class="appointment-container">
+        <div class="common-disease-container">
+            <div class="disease-cards-row">
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+            </div>
+            <div class="disease-cards-row">
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+                <div class="disease-card-column">
+                    <div class="disease-card">
+                        <img src="assets/cough.webp" alt="cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-an-appointment-container">
+            <div class="appointment-heading">
+                <h2>Book an Appointment</h2>
+            </div>
+            <div class="appointment-input">
+                <input type="text" placeholder = "email id">
+                <input type="text" placeholder = "phone number">
+                <div class="button-book-now">
+                    <a href="#"><button class="book-now">Book Now</button></a>
+                </div>  
+            </div>
+            <div class="google-signin">
+                <img src="assets/google_logo.png" alt="signin with google">
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <div class="about-left">
+            <div class="about-heading">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-content">
+                <p>Homeo clinic was created in 2003 with vision to bring homeopathic medicine as a solution for the common people after serving for  more than 15 years through individual hospitals at multiple locations the team of doctors decided to bring their experties online to serve people beyond physical reach. </p>
+            </div>
+        </div>
+        <div classs="about-right">
+            <img id="doodle-img" src="assets/doodle-about.svg" alt="doodle">
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-content">
+            <div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/landing.js"></script>
+</body>
+</html>
